@@ -15,6 +15,7 @@ class MainViewController: UIViewController {
     var timerViewController: UIViewController = {
         let timerViewController = TimerViewController()
         timerViewController.view.layer.cornerRadius = 20
+        timerViewController.view.layer.masksToBounds = false
         timerViewController.view.clipsToBounds = true
         return timerViewController
     }()
@@ -24,11 +25,10 @@ class MainViewController: UIViewController {
         
         view.backgroundColor = .white
         
+        let size = min(self.view.frame.width, self.view.frame.height) * 0.7
         view.addSubview(timerViewController.view)
-        timerViewController.view.translatesAutoresizingMaskIntoConstraints = false
-        timerViewController.view.width(to: self.view, nil, multiplier: 0.7, offset: 0, relation: .equal, priority: .defaultLow, isActive: true)
-        timerViewController.view.height(to: self.view, nil, multiplier: 0.7, offset: 0, relation: .equal, priority: .defaultLow, isActive: true)
-        timerViewController.view.heightAnchor.constraint(equalTo: timerViewController.view.widthAnchor, multiplier: 1).isActive = true
+        timerViewController.view.width(size)
+        timerViewController.view.height(size)
         timerViewController.view.center(in: self.view)
     }
     

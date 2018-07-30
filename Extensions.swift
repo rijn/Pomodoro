@@ -20,6 +20,14 @@ extension UIColor {
     }
 }
 
+struct LayoutConstraints {
+    static let largeScaleWidthFactor: CGFloat = 0.03;
+    static let largeScaleHeightFactor: CGFloat = 0.15;
+    static let smallScaleWidthFactor: CGFloat = 0.01;
+    static let smallScaleHeightFactor: CGFloat = 0.1;
+    static let paddingBetweenScaleAndLineFactor: CGFloat = 0.1;
+}
+
 extension UINavigationController {
     func pushViewControllerFromBottom(_ viewController: UIViewController) {
         let transition:CATransition = CATransition()

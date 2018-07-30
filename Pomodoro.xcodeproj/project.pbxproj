@@ -16,6 +16,7 @@
 		B201835A210E9D9D009E1AD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018358210E9D84009E1AD5 /* Extensions.swift */; };
 		B201835D210E9DFE009E1AD5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201835C210E9DFE009E1AD5 /* TimerViewController.swift */; };
 		B201835F210E9FD8009E1AD5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201835E210E9FD8009E1AD5 /* MainViewController.swift */; };
+		B2018361210EA7BC009E1AD5 /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018360210EA7BC009E1AD5 /* ScaleView.swift */; };
 		B212061C210E9A740073D34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061B210E9A740073D34C /* AppDelegate.swift */; };
 		B212061E210E9A740073D34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061D210E9A740073D34C /* ViewController.swift */; };
 		B2120624210E9A740073D34C /* Pomodoro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2120622210E9A740073D34C /* Pomodoro.xcdatamodeld */; };
@@ -36,6 +37,7 @@
 		B2018358210E9D84009E1AD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		B201835C210E9DFE009E1AD5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		B201835E210E9FD8009E1AD5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B2018360210EA7BC009E1AD5 /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
 		B2120618210E9A740073D34C /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B212061B210E9A740073D34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B212061D210E9A740073D34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			children = (
 				B201835C210E9DFE009E1AD5 /* TimerViewController.swift */,
 				B201835E210E9FD8009E1AD5 /* MainViewController.swift */,
+				B2018360210EA7BC009E1AD5 /* ScaleView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				B201835D210E9DFE009E1AD5 /* TimerViewController.swift in Sources */,
 				B2120624210E9A740073D34C /* Pomodoro.xcdatamodeld in Sources */,
 				B212061E210E9A740073D34C /* ViewController.swift in Sources */,
+				B2018361210EA7BC009E1AD5 /* ScaleView.swift in Sources */,
 				B201835F210E9FD8009E1AD5 /* MainViewController.swift in Sources */,
 				B212061C210E9A740073D34C /* AppDelegate.swift in Sources */,
 				B2018359210E9D84009E1AD5 /* Extensions.swift in Sources */,
