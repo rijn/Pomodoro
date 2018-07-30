@@ -30,6 +30,12 @@ class MainViewController: UIViewController {
         timerViewController.view.width(size)
         timerViewController.view.height(size)
         timerViewController.view.center(in: self.view)
+        
+        let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panGestureHandler(_:)))
+        view.addGestureRecognizer(gestureRecognizer)
     }
     
+    @objc func panGestureHandler(_ recognizer: UIPanGestureRecognizer){
+        print(recognizer)
+    }
 }
