@@ -26,6 +26,8 @@ struct LayoutConstraints {
     static let smallScaleWidthFactor: CGFloat = 0.01;
     static let smallScaleHeightFactor: CGFloat = 0.1;
     static let paddingBetweenScaleAndLineFactor: CGFloat = 0.1;
+    static let horizontalLineHeightFactor: CGFloat = 0.02;
+    static let horizontalLineShadowFactor: CGFloat = 0.3;
 }
 
 extension UINavigationController {
@@ -48,4 +50,5 @@ public enum Fonts: String {
     case themify = "themify"
     case mapIcon = "map-icons"
     case materialIcon = "MaterialIcons-Regular"
+    case segoeMDL2 = "Segoe mdl2 assets"
 }

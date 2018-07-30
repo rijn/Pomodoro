@@ -32,9 +32,9 @@ class ScaleView : UIView {
     
     override func draw(_ rect: CGRect) {
         UIColor.white.setFill()
-        print(rect, size!)
         var x: CGFloat = size! / 2
-        let y: CGFloat = size! / 2 - size! * LayoutConstraints.paddingBetweenScaleAndLineFactor
+        let y: CGFloat = size! / 2
+        let padding = size! * LayoutConstraints.paddingBetweenScaleAndLineFactor;
         let diffX = size! * gridScale!
         let largeScaleWidth = size! * LayoutConstraints.largeScaleWidthFactor
         let largeScaleHeight = size! * LayoutConstraints.largeScaleHeightFactor
@@ -47,13 +47,13 @@ class ScaleView : UIView {
             let scaleWidth = i % 5 == 0 ? largeScaleWidth : smallScaleWidth
             let scaleHeight = i % 5 == 0 ? largeScaleHeight : smallScaleHeight
             let rect = UIBezierPath(rect: CGRect(x: x - scaleWidth / 2,
-                                                 y: y - scaleHeight,
+                                                 y: y - padding - scaleHeight,
                                                  width: scaleWidth,
                                                  height: scaleHeight))
             rect.fill()
             if i % 5 == 0 {
                 let string = NSString(format: "%d", i)
-                string.draw(in: CGRect(x: x - diffX * 2, y: y - fontHeight, width: diffX * 4, height: fontHeight),
+                string.draw(in: CGRect(x: x - diffX * 2, y: y - padding - fontHeight, width: diffX * 4, height: fontHeight),
                             withAttributes: [
                                 NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: size! / 10),
                                 NSAttributedStringKey.paragraphStyle: paragraphStyle,
@@ -61,5 +61,18 @@ class ScaleView : UIView {
             }
             x += diffX
         }
+        
+        UIColor.black.setFill()
+        let horizontalLineHeight = size! * LayoutConstraints.horizontalLineHeightFactor
+        let horizontalPath = UIBezierPath(rect: CGRect(x: 0,
+                                             y: y - horizontalLineHeight / 2,
+                                             width: rect.width,
+                                             height: horizontalLineHeight))
+        horizontalPath.fill(with: .normal, alpha: 0.6)
+        let horizontalPathShadow = UIBezierPath(rect: CGRect(x: 0,
+                                                             y: y - horizontalLineHeight / 2,
+                                                             width: rect.width,
+                                                             height: horizontalLineHeight * LayoutConstraints.horizontalLineShadowFactor))
+        horizontalPathShadow.fill(with: .normal, alpha: 0.6)
     }
 }
