@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3026FF14F79FA6229B9F5222 /* Pods_Pomodoro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D3E442AC1F63F9178A0C350 /* Pods_Pomodoro.framework */; };
+		B201834A210E9BD1009E1AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018349210E9BD1009E1AD5 /* AppDelegate.swift */; };
+		B201834D210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B201834B210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld */; };
+		B201834F210E9BD2009E1AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B201834E210E9BD2009E1AD5 /* Assets.xcassets */; };
+		B2018352210E9BD2009E1AD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2018350210E9BD2009E1AD5 /* MainMenu.xib */; };
 		B212061C210E9A740073D34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061B210E9A740073D34C /* AppDelegate.swift */; };
 		B212061E210E9A740073D34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061D210E9A740073D34C /* ViewController.swift */; };
 		B2120624210E9A740073D34C /* Pomodoro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2120622210E9A740073D34C /* Pomodoro.xcdatamodeld */; };
@@ -18,6 +22,13 @@
 /* Begin PBXFileReference section */
 		32A319CBADDE62156617E9C9 /* Pods-Pomodoro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pomodoro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pomodoro/Pods-Pomodoro.release.xcconfig"; sourceTree = "<group>"; };
 		4D3E442AC1F63F9178A0C350 /* Pods_Pomodoro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pomodoro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2018347210E9BD1009E1AD5 /* Pomodoro macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pomodoro macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2018349210E9BD1009E1AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B201834C210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pomodoro_macOS.xcdatamodel; sourceTree = "<group>"; };
+		B201834E210E9BD2009E1AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B2018351210E9BD2009E1AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B2018353210E9BD2009E1AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2018354210E9BD2009E1AD5 /* Pomodoro_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoro_macOS.entitlements; sourceTree = "<group>"; };
 		B2120618210E9A740073D34C /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B212061B210E9A740073D34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B212061D210E9A740073D34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +40,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B2018344210E9BD1009E1AD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2120615210E9A740073D34C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +66,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B2018348210E9BD1009E1AD5 /* Pomodoro macOS */ = {
+			isa = PBXGroup;
+			children = (
+				B2018349210E9BD1009E1AD5 /* AppDelegate.swift */,
+				B201834E210E9BD2009E1AD5 /* Assets.xcassets */,
+				B2018350210E9BD2009E1AD5 /* MainMenu.xib */,
+				B2018353210E9BD2009E1AD5 /* Info.plist */,
+				B2018354210E9BD2009E1AD5 /* Pomodoro_macOS.entitlements */,
+				B201834B210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld */,
+			);
+			path = "Pomodoro macOS";
+			sourceTree = "<group>";
+		};
 		B212060F210E9A740073D34C = {
 			isa = PBXGroup;
 			children = (
 				B212061A210E9A740073D34C /* Pomodoro */,
+				B2018348210E9BD1009E1AD5 /* Pomodoro macOS */,
 				B2120619210E9A740073D34C /* Products */,
 				D636C23CB730765D98DF38AF /* Pods */,
 				5F45D8BA35925C53E9B17295 /* Frameworks */,
@@ -62,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				B2120618210E9A740073D34C /* Pomodoro.app */,
+				B2018347210E9BD1009E1AD5 /* Pomodoro macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +124,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B2018346210E9BD1009E1AD5 /* Pomodoro macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2018357210E9BD2009E1AD5 /* Build configuration list for PBXNativeTarget "Pomodoro macOS" */;
+			buildPhases = (
+				B2018343210E9BD1009E1AD5 /* Sources */,
+				B2018344210E9BD1009E1AD5 /* Frameworks */,
+				B2018345210E9BD1009E1AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pomodoro macOS";
+			productName = "Pomodoro macOS";
+			productReference = B2018347210E9BD1009E1AD5 /* Pomodoro macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 		B2120617210E9A740073D34C /* Pomodoro */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B212062D210E9A750073D34C /* Build configuration list for PBXNativeTarget "Pomodoro" */;
@@ -120,6 +170,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Rijn;
 				TargetAttributes = {
+					B2018346210E9BD1009E1AD5 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					B2120617210E9A740073D34C = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -139,11 +192,21 @@
 			projectRoot = "";
 			targets = (
 				B2120617210E9A740073D34C /* Pomodoro */,
+				B2018346210E9BD1009E1AD5 /* Pomodoro macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B2018345210E9BD1009E1AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201834F210E9BD2009E1AD5 /* Assets.xcassets in Resources */,
+				B2018352210E9BD2009E1AD5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2120616210E9A740073D34C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,6 +264,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B2018343210E9BD1009E1AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B201834D210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld in Sources */,
+				B201834A210E9BD1009E1AD5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B2120614210E9A740073D34C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +286,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B2018350210E9BD2009E1AD5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B2018351210E9BD2009E1AD5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 		B2120627210E9A750073D34C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -225,6 +305,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B2018355210E9BD2009E1AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pomodoro macOS/Pomodoro_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TF4L75X767;
+				INFOPLIST_FILE = "Pomodoro macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		B2018356210E9BD2009E1AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Pomodoro macOS/Pomodoro_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = TF4L75X767;
+				INFOPLIST_FILE = "Pomodoro macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro.macos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
 		B212062B210E9A750073D34C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -347,8 +471,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF4L75X767;
 				INFOPLIST_FILE = Pomodoro/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -363,8 +490,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TF4L75X767;
 				INFOPLIST_FILE = Pomodoro/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = rijn.Pomodoro.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -374,6 +504,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B2018357210E9BD2009E1AD5 /* Build configuration list for PBXNativeTarget "Pomodoro macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2018355210E9BD2009E1AD5 /* Debug */,
+				B2018356210E9BD2009E1AD5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B2120613210E9A740073D34C /* Build configuration list for PBXProject "Pomodoro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -395,6 +534,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		B201834B210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B201834C210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodel */,
+			);
+			currentVersion = B201834C210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodel */;
+			path = Pomodoro_macOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		B2120622210E9A740073D34C /* Pomodoro.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
