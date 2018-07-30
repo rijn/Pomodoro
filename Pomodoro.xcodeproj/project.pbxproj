@@ -12,6 +12,10 @@
 		B201834D210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B201834B210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld */; };
 		B201834F210E9BD2009E1AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B201834E210E9BD2009E1AD5 /* Assets.xcassets */; };
 		B2018352210E9BD2009E1AD5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2018350210E9BD2009E1AD5 /* MainMenu.xib */; };
+		B2018359210E9D84009E1AD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018358210E9D84009E1AD5 /* Extensions.swift */; };
+		B201835A210E9D9D009E1AD5 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2018358210E9D84009E1AD5 /* Extensions.swift */; };
+		B201835D210E9DFE009E1AD5 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201835C210E9DFE009E1AD5 /* TimerViewController.swift */; };
+		B201835F210E9FD8009E1AD5 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201835E210E9FD8009E1AD5 /* MainViewController.swift */; };
 		B212061C210E9A740073D34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061B210E9A740073D34C /* AppDelegate.swift */; };
 		B212061E210E9A740073D34C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212061D210E9A740073D34C /* ViewController.swift */; };
 		B2120624210E9A740073D34C /* Pomodoro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2120622210E9A740073D34C /* Pomodoro.xcdatamodeld */; };
@@ -29,6 +33,9 @@
 		B2018351210E9BD2009E1AD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B2018353210E9BD2009E1AD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2018354210E9BD2009E1AD5 /* Pomodoro_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pomodoro_macOS.entitlements; sourceTree = "<group>"; };
+		B2018358210E9D84009E1AD5 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		B201835C210E9DFE009E1AD5 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		B201835E210E9FD8009E1AD5 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		B2120618210E9A740073D34C /* Pomodoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pomodoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B212061B210E9A740073D34C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B212061D210E9A740073D34C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,9 +86,19 @@
 			path = "Pomodoro macOS";
 			sourceTree = "<group>";
 		};
+		B201835B210E9DE0009E1AD5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B201835C210E9DFE009E1AD5 /* TimerViewController.swift */,
+				B201835E210E9FD8009E1AD5 /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		B212060F210E9A740073D34C = {
 			isa = PBXGroup;
 			children = (
+				B2018358210E9D84009E1AD5 /* Extensions.swift */,
 				B212061A210E9A740073D34C /* Pomodoro */,
 				B2018348210E9BD1009E1AD5 /* Pomodoro macOS */,
 				B2120619210E9A740073D34C /* Products */,
@@ -102,6 +119,7 @@
 		B212061A210E9A740073D34C /* Pomodoro */ = {
 			isa = PBXGroup;
 			children = (
+				B201835B210E9DE0009E1AD5 /* Controllers */,
 				B212061B210E9A740073D34C /* AppDelegate.swift */,
 				B212061D210E9A740073D34C /* ViewController.swift */,
 				B2120625210E9A750073D34C /* Assets.xcassets */,
@@ -269,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B201834D210E9BD1009E1AD5 /* Pomodoro_macOS.xcdatamodeld in Sources */,
+				B201835A210E9D9D009E1AD5 /* Extensions.swift in Sources */,
 				B201834A210E9BD1009E1AD5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,9 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B201835D210E9DFE009E1AD5 /* TimerViewController.swift in Sources */,
 				B2120624210E9A740073D34C /* Pomodoro.xcdatamodeld in Sources */,
 				B212061E210E9A740073D34C /* ViewController.swift in Sources */,
+				B201835F210E9FD8009E1AD5 /* MainViewController.swift in Sources */,
 				B212061C210E9A740073D34C /* AppDelegate.swift in Sources */,
+				B2018359210E9D84009E1AD5 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
