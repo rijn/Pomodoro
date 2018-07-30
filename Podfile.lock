@@ -1,0 +1,28 @@
+PODS:
+  - DynamicColor (4.0.2)
+  - SwiftIconFont (2.7.3)
+  - TinyConstraints (3.1.0)
+  - ViewAnimator (1.0.5)
+
+DEPENDENCIES:
+  - DynamicColor (~> 4.0.1)
+  - SwiftIconFont
+  - TinyConstraints
+  - ViewAnimator
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - DynamicColor
+    - SwiftIconFont
+    - TinyConstraints
+    - ViewAnimator
+
+SPEC CHECKSUMS:
+  DynamicColor: c7adcfe871781a2b39877a5774e452ba51b79eb3
+  SwiftIconFont: ebd8ee931a1e7072b61a87aec53f3a0786ef7f2b
+  TinyConstraints: 4721a4b303c799328867078ade6560e152df54d1
+  ViewAnimator: d87d691fbcaf994db7ee8fc632afa3073bd3b851
+
+PODFILE CHECKSUM: 006d157ca8b1111f45138219fe69e66ea2804422
+
+COCOAPODS: 1.5.0
