@@ -12,7 +12,7 @@ import TinyConstraints
 
 class MainViewController: UIViewController {
     
-    var timerViewController: UIViewController = {
+    var timerViewController: TimerViewController = {
         let timerViewController = TimerViewController()
         timerViewController.view.layer.cornerRadius = 20
         timerViewController.view.layer.masksToBounds = false
@@ -35,7 +35,8 @@ class MainViewController: UIViewController {
         view.addGestureRecognizer(gestureRecognizer)
     }
     
-    @objc func panGestureHandler(_ recognizer: UIPanGestureRecognizer){
+    @objc func panGestureHandler(_ recognizer: UIPanGestureRecognizer) {
+        timerViewController.setTime(second: 600)
         print(recognizer)
     }
 }

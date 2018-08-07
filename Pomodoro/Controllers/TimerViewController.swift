@@ -12,6 +12,7 @@ import SwiftIconFont
 
 class TimerViewController: UIViewController {
     var scaleView: UIView?
+    var widthPerSecond: CGFloat = 0
     
     var indicatorLabel: UILabel = {
         let label = UILabel()
@@ -31,6 +32,8 @@ class TimerViewController: UIViewController {
     }
     
     override func viewDidLayoutSubviews() {
+        widthPerSecond = self.view.frame.width / 9 / 60;
+        
         scaleView?.removeFromSuperview()
         scaleView = ScaleView(frame: self.view.frame, gridScale: 1 / 9)
         scaleView?.backgroundColor = .clear
@@ -40,5 +43,9 @@ class TimerViewController: UIViewController {
                                       y: view.frame.height / 2,
                                       width: view.frame.width,
                                       height: 50.0)
+    }
+    
+    func setTime(second: Int) {
+        scaleView?.center = CGPoint(x: CGFloat(30 * 60 - second) * widthPerSecond, y: scaleView!.center.y)
     }
 }
